@@ -2,4 +2,105 @@
 
 body {
     font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.top {
+    display: flex;
+    background: #1F2937;
+    padding: 0;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    gap: 70px;
+    padding-bottom: 40px;
+}
+
+.header {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.introduction {
+    display: flex;
+    max-width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 900;
+ }
+
+
+
+.mantis img {
+    display: flex;
+    flex-shrink: 0;
+    width: 450px;
+    height: 200px;
+    margin-right: 150px;  
+}
+
+.mid-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-top: 30px;
+    gap: 30px
+}
+
+.facts{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;   /* Restrict the maximum width of the container */
+    width: 100%;        /* Ensure the container uses the full width available */
+    height: auto;       /* Keep the height proportional */
+    overflow: hidden;   /* Prevent content from overflowing the container */
+    
+    
+}
+
+.images img {
+    width: 100%;        /* Ensure the image scales to fit the container width */
+    height: auto;       /* Maintain the aspect ratio */
+         
 }
