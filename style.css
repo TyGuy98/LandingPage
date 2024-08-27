@@ -71,15 +71,19 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     padding: 0;
     padding-top: 30px;
-    gap: 30px
+    padding-bottom: 60px;
+    gap: 30px;
 }
+
+
 
 .facts{
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 60px;
 }
 
 h1 {
@@ -90,17 +94,29 @@ h1 {
 
 .images {
     display: flex;
-    flex-direction: column;
-    max-width: 300px;   /* Restrict the maximum width of the container */
-    width: 100%;        /* Ensure the container uses the full width available */
-    height: auto;       /* Keep the height proportional */
-    overflow: hidden;   /* Prevent content from overflowing the container */
-    
-    
+    flex-direction: column; /* Stack the image and text vertically */
+    max-width: 300px;       /* Restrict the maximum width of the container */
+    width: 100%;            /* Ensure the container uses the full width available */
+    height: auto;           /* Keep the height proportional */
+    text-align: center;     /* center the text to the middle */
+    gap: 20px;              /* Leave a space between the images and the text */
 }
 
 .images img {
     width: 100%;        /* Ensure the image scales to fit the container width */
-    height: auto;       /* Maintain the aspect ratio */
-         
+    height: 250px;       /* Maintain the aspect ratio */
+    object-fit: cover;      /* Crop the image to fit the container without distortion */
+    border-radius: 25px;
+    border: 5px solid #3882f6;
+  
+}
+
+.text {
+    color: #535961;
+}
+
+.mid-bottom {
+    display: flex;
+    flex-grow: 1;
+    background: #E5E7EB;
 }
