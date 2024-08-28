@@ -24,13 +24,25 @@ body {
 .header {
     display:flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
+
+.logo img {
+    width: 150px;   /* Explicitly set the width */
+    height: auto;   /* Maintain the aspect ratio */
+    max-width: 100%; /* Ensure it doesn’t exceed its container */
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover  {
+    transform: scale(1.1); 
+  }
+
 
 .header-links {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding-right: 400px;
 }
 
 a {
@@ -54,6 +66,16 @@ a {
 .title {
     font-size: 48px;
     font-weight: 900;
+ }
+
+ .button button {
+    background-color: #3882F6;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    font-weight: 900;
+    border: none;     /* Remove the default border */
  }
 
 
