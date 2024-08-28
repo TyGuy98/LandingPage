@@ -6,7 +6,6 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    
 }
 
 .top {
@@ -130,7 +129,6 @@ h1 {
     object-fit: cover;      /* Crop the image to fit the container without distortion */
     border-radius: 25px;
     border: 5px solid #3882f6;
-  
 }
 
 .text {
@@ -139,6 +137,37 @@ h1 {
 
 .mid-bottom {
     display: flex;
-    flex-grow: 1;
+    flex-direction: column;
     background: #E5E7EB;
+    padding: 100px 40px;
+    gap: 20px;
+    
 }
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    max-width: 95%;
+    font-style: italic;
+    color: #1F2937;
+    text-align: center;
+}
+
+.mid-bottom h3 {
+    color: black;
+    text-align: right;
+    width: auto; /* Allows the width to shrink to fit content */
+    padding-right: 60px;
+    
+}
+
+.bottom {
+    display: flex;
+}
+
+.bottom-container {
+    background-color: #3882f6;
+    padding: 100px 40px;
+}
+
+
