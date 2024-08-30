@@ -163,11 +163,53 @@ h1 {
 
 .bottom {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    
 }
 
-.bottom-container {
+.bottom-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #3882f6;
-    padding: 100px 40px;
+    border-radius: 10px;
+    width: 1000px;
+    padding: 60px 60px;
 }
+
+.text h2, p{
+   margin: 0;
+   color: white;
+}
+
+.text p {
+    color: #E5E7EB;
+}
+
+.bottom-content button {
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    background-color: #3882f6;
+    border-radius: 7px;
+    padding: 8px 5px;
+    width: 120px;
+    height: auto;
+}
+
+
+.footer {
+    background: #1F2937;
+    text-align: center;
+    color: rgb(199, 185, 185);
+    padding: 40px
+}
+
+
+
+
+
 
 
