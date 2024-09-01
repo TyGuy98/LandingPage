@@ -22,16 +22,25 @@ body {
 
 .header {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
+}
+.logo {
+    flex-shrink: 0;
 }
 
 .logo img {
-    width: 150px;   /* Explicitly set the width */
+    width: 110px;   /* Explicitly set the width */
     height: auto;   /* Maintain the aspect ratio */
     max-width: 100%; /* Ensure it doesn’t exceed its container */
     transition: all .2s ease-in-out;
+    border-radius: 80px;
+    background-color: #3882F6;
+    border: 5px solid white;
+    margin-top: 20px;
+    margin-left: 10px;
 }
+
 
 .logo:hover  {
     transform: scale(1.1); 
@@ -41,8 +50,18 @@ body {
 .header-links {
     display: flex;
     margin: 0;
-    padding-right: 400px;
+    font-weight: 700;
+    gap: 20px;
+    font-size: 20px;
+    margin-right: 350px;
 }
+
+.header-links a:hover { 
+    color: yellow;
+    font-size: 22px;
+}
+
+
 
 a {
     color: white;
@@ -73,18 +92,29 @@ a {
     width: 100px;
     height: 35px;
     border-radius: 10px;
-    font-weight: 900;
+    font-weight: 600;
     border: none;     /* Remove the default border */
  }
 
+ .button button:hover {
+    font-weight: 900;
+     background-color: #2167d8;
+ }
+
+
+ button:active {
+    transform: translateY(2px);  /* Move the button down slightly */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);  /* Reduce the shadow */
+}
 
 
 .mantis img {
     display: flex;
-    flex-shrink: 0;
+   
     width: 450px;
     height: 200px;
     margin-right: 150px;  
+    border-radius: 50%;
 }
 
 .mid-top {
@@ -103,7 +133,7 @@ a {
 
 .facts{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     gap: 60px;
 }
 
@@ -141,7 +171,6 @@ h1 {
     background: #E5E7EB;
     padding: 100px 40px;
     gap: 20px;
-    
 }
 
 .quote {
@@ -158,7 +187,6 @@ h1 {
     text-align: right;
     width: auto; /* Allows the width to shrink to fit content */
     padding-right: 60px;
-    
 }
 
 .bottom {
@@ -166,7 +194,6 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 80px;
-    
 }
 
 .bottom-content {
@@ -179,7 +206,7 @@ h1 {
     padding: 60px 60px;
 }
 
-.text h2, p{
+.text h2, .sign-up{
    margin: 0;
    color: white;
 }
@@ -207,6 +234,10 @@ h1 {
     padding: 40px
 }
 
+button:hover {
+    font-weight: 900;
+    background-color: #2167d8;
+}
 
 
 
